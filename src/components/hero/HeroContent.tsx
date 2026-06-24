@@ -5,7 +5,7 @@ import { profile } from "../../data/profile";
 import useLanguage from "../../hooks/useLanguage";
 
 export default function HeroContent() {
-    
+
     const { language } = useLanguage();
     const name = profile.name;
     const headline = profile.headline[language];
@@ -40,12 +40,15 @@ export default function HeroContent() {
 
 
             <div className="flex flex-wrap gap-3">
-                <a  href="#projects" className="px-6 py-2 bg-fucsia/10 text-fucsia border border-fucsia/50 text-sm font-medium rounded-full hover:bg-fucsia hover:text-white hover:shadow-[0_0_15px_rgba(255,0,255,0.4)] transition-all duration-300">
+                <a href="#projects" className="px-6 py-2 bg-fucsia/10 text-fucsia border border-fucsia/50 text-sm font-medium rounded-full hover:bg-fucsia hover:text-white hover:shadow-[0_0_15px_rgba(255,0,255,0.4)] transition-all duration-300">
                     {projectsLabel}
                 </a>
-                <button className="px-6 py-2 bg-transparent text-slate-300 text-sm font-medium rounded-full border border-slate-700 hover:border-slate-400 hover:text-white transition-all duration-300">
+                <a
+                    href="/cv/CV_Norberto_Lopez.pdf"
+                    download
+                    className="px-6 py-2 bg-transparent text-slate-300 text-sm font-medium rounded-full border border-slate-700 hover:border-slate-400 hover:text-white transition-all duration-300">
                     {downloadCvLabel}
-                </button>
+                </a>
             </div>
 
         </div>

@@ -36,7 +36,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/KiritoKazut0/my-portfolio.git"
                   target="_blank"
                   rel="noreferrer"
                   className="group flex items-start gap-3"
